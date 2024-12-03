@@ -6,24 +6,18 @@
 #include "Player.h"
 #include "GameMechs.h"
 
-
 class Food
 {
     private:
-        GameMechs* mainGameMechsRef;
-        objPosArrayList* foodBucket;
+        GameMechs* mainGameMechsRef;  // Reference to game mechanics
+        objPosArrayList* foodBucket;  // List of food objects
 
     public:
-        
-        Food(GameMechs* thisGMRef);
-        ~Food();
+        Food(GameMechs* thisGMRef);    // Constructor
+        ~Food();                       // Destructor
 
-        void generateFood(objPosArrayList* blockOff);
-        objPosArrayList* getFoodPos();
+        void generateFood(objPosArrayList* blockOff);  // Generate new food positions
+        objPosArrayList* getFoodPos();                 // Get current food positions
 };
 
-
-
-
-
-#endif 
+#endif

@@ -123,8 +123,8 @@ void DrawScreen(void)
 
                     //Iterate through player list
                     for (int l = 0; l < (*snakeList).getSize(); l++){
-                        (*snakeList).getElement(bodyPos, l);
-                        if ((i == bodyPos.y) && (j == bodyPos.x)) {
+                        bodyPos = snakeList->getElement(l); 
+                        if (i == bodyPos.pos->y && j == bodyPos.pos->x) {
                             MacUILib_printf("%c", bodyPos.symbol);
 
                             piece_placed = true;//Don't place space and don't check food
@@ -136,8 +136,8 @@ void DrawScreen(void)
                     
                     //Iterate through food list
                     for (int l = 0; l < 5; l++){
-                        (*foodList).getElement(foodPos, l);
-                        if ((i == foodPos.y) && (j == foodPos.x)) {
+                        foodPos = foodList->getElement(l);
+                        if (i == foodPos.pos->y && j == foodPos.pos->x) {
                             MacUILib_printf("%c", foodPos.symbol);
 
                             piece_placed = true;//Don't place space
@@ -170,13 +170,6 @@ void LoopDelay(void)
 {
     MacUILib_Delay(DELAY_CONST); // 0.1s delay
 }
-
-
-void LoopDelay(void)
-{
-    MacUILib_Delay(DELAY_CONST); // 0.1s delay
-}
-
 
 void CleanUp(void)
 {

@@ -2,52 +2,36 @@
 #define GAMEMECHS_H
 
 #include <cstdlib>
-#include <time.h>
-
+#include <ctime>  // Changed to <ctime> for consistency
 #include "objPos.h"
-#include "objPosArrayList.h"
 
 using namespace std;
 
-
 class GameMechs
 {
-    // Construct the remaining declaration from the project manual.
+private:
+    char input;       // Stores current player input
+    bool exitFlag;    // Flag to indicate game exit
+    bool loseFlag;    // Flag to indicate game loss
+    int score;        // Player's score
+    int boardSizeX;   // Board width
+    int boardSizeY;   // Board height
 
-    // Only some sample members are included here
+public:
+    GameMechs();                      // Default constructor
+    GameMechs(int boardX, int boardY); // Specialized constructor
+    /* No need for a destructor since no heap data members are used
+    Therefore, we can just use the default destructor */
 
-    // You will include more data members and member functions to complete your design.
+    bool getExitFlagStatus();          // Get exit flag status
+    void setExitTrue();                // Set exit flag to true
 
-    private:
-        char input;
-        bool exitFlag;
-        
-        bool loseFlag;
-        int score;
+    char getInput();                   // Get current input
+    void setInput(char this_input);    // Set input
+    void clearInput();                 // Clear input
 
-        int boardSizeX;
-        int boardSizeY;
-
-        objPos foodPos;
-        
-        
-    public:
-        GameMechs();
-        GameMechs(int boardX, int boardY);
-        
-        bool getExitFlagStatus();
-        void setExitTrue();
-
-        char getInput();
-        void setInput(char this_input);
-        void clearInput();
-
-        int getBoardSizeX();
-        int getBoardSizeY();
-
-        
-      
-
+    int getBoardSizeX();               // Get board width
+    int getBoardSizeY();               // Get board height
 };
 
 #endif
