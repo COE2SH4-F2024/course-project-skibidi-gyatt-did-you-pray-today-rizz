@@ -24,7 +24,7 @@ Player::Player(GameMechs* thisGMRef, Food* pFood)
 // Destructor: cleanup dynamic memory
 Player::~Player()
 {
-    delete playerPosList;  // Free position list memory
+    delete[] playerPosList;  // Free position list memory
     playerPosList = nullptr;
 }
 
@@ -106,7 +106,20 @@ void Player::movePlayer()
             // Grow player based on food type
             for (int w = 0; w < num_growth; w++)
             {
-                playerPosList->insertHead(playerPos);
+                switch (movement) {
+                    case UP:    playerPos.pos->y--; break;
+                    case DOWN:  playerPos.pos->y++; break;
+                    case LEFT:  playerPos.pos->x--; break;
+                    case RIGHT: playerPos.pos->x++; break;
+                    case STILL: break;
+            }
+
+            // Wrap around logic
+            if (playerPos.pos->x >= (mainGameMechsRef->getBoardSizeX() - 1)) playerPos.pos->x = 1;
+            else if (playerPos.pos->x <= 0) playerPos.pos->x = (mainGameMechsRef->getBoardSizeX() - 2);
+            if (playerPos.pos->y >= (mainGameMechsRef->getBoardSizeY() - 1)) playerPos.pos->y = 1;
+            else if (playerPos.pos->y <= 0) playerPos.pos->y = (mainGameMechsRef->getBoardSizeY() - 2);
+            playerPosList->insertHead(playerPos);
             }
 
             // Update score and regenerate food

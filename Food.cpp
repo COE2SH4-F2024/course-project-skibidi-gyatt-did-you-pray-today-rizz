@@ -24,7 +24,7 @@ Food::Food(GameMechs* thisGMRef)
 Food::~Food()
 {
     // Delete food object list
-    delete foodBucket;
+    delete[] foodBucket;
     foodBucket = nullptr;
 }
 
@@ -32,7 +32,7 @@ void Food::generateFood(objPosArrayList* blockOff)
 {
     int alreadyChosen, candidateX, candidateY;
 
-    objPos foodPos;
+    objPos foodPos, playerPos, otherFoodPos;
 
     // Generate 5 distinct food objects
     for (int z = 0; z < 5; z++)
@@ -49,7 +49,7 @@ void Food::generateFood(objPosArrayList* blockOff)
             // Check if position is taken by player or blocked area
             for (int i = 0; i < blockOff->getSize(); i++)
             {
-                objPos playerPos = blockOff->getElement(i);
+                playerPos = blockOff->getElement(i);
                 if ((candidateX == playerPos.pos->x) && (candidateY == playerPos.pos->y))
                 {
                     alreadyChosen = 1;  // Keep generating
@@ -60,7 +60,7 @@ void Food::generateFood(objPosArrayList* blockOff)
             // Check if position is already taken by other food
             for (int j = 0; j < foodBucket->getSize(); j++)
             {
-                objPos otherFoodPos = foodBucket->getElement(j);
+                otherFoodPos = foodBucket->getElement(j);
                 if ((otherFoodPos.pos->x == candidateX) && (otherFoodPos.pos->y == candidateY))
                 {
                     alreadyChosen = 1;  // Keep generating
@@ -69,11 +69,21 @@ void Food::generateFood(objPosArrayList* blockOff)
             }
 
             // If position is valid, insert food
-            if (!alreadyChosen)
+            if(!alreadyChosen)
             {
-                foodPos.setObjPos(candidateX, candidateY, (z == 1) ? '3' : (z == 3) ? '-' : '$');
+                foodPos.pos->x = candidateX;
+                foodPos.pos->y = candidateY;
+                if (z == 1) {
+                    foodPos.symbol = '3';
+                }
+                else if (z == 3) {
+                    foodPos.symbol = '-';
+                }
+                else {
+                    foodPos.symbol = '$';
+                }
                 foodBucket->insertTail(foodPos);
-                foodBucket->removeHead();  // Maintain a fixed number of food items
+                foodBucket->removeHead();
             }
         }
     }
