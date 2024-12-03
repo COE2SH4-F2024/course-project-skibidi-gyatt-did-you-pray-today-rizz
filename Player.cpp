@@ -16,7 +16,7 @@ Player::Player(GameMechs* thisGMRef, Food* pFood)
 
     // Set initial player position at board center
     objPos temp;
-    temp.setObjPos(mainGameMechsRef->getBoardSizeX() / 2, mainGameMechsRef->getBoardSizeY() / 2, 'O');
+    temp.setObjPos(mainGameMechsRef->getBoardSizeX() / 2, mainGameMechsRef->getBoardSizeY() / 2, '*');
     playerPosList->insertHead(temp);
 
     srand(time(NULL)); // Seed random generator
@@ -95,7 +95,7 @@ void Player::movePlayer()
 
         // Collision detected
         if (playerPos.x == foodPos.x && playerPos.y == foodPos.y) {
-            int num_growth = (foodPos.symbol == '2') ? 2 : 1; // Special food effect
+            int num_growth = (foodPos.symbol == '3') ? 3 : 1; // Special food effect
             if (foodPos.symbol == '-') { // Shrink effect
                 num_growth = 0;
                 if (playerPosList->getSize() > 1) playerPosList->removeTail();
@@ -121,7 +121,7 @@ void Player::movePlayer()
             }
 
             // Update score and regenerate food
-            score += (foodPos.symbol == '2') ? 4 : 1;
+            score += (foodPos.symbol == '3') ? 6 : 1;
             foodRef->generateFood(playerPosList);
             break;
         }

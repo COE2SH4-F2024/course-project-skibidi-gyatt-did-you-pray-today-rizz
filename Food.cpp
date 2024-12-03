@@ -70,7 +70,7 @@ void Food::generateFood(objPosArrayList* blockOff)
                 foodPos.x = candidateX;
                 foodPos.y = candidateY;
                 if (z == 1) {
-                    foodPos.symbol = '2';
+                    foodPos.symbol = '3';
                 }
                 else if (z == 3) {
                     foodPos.symbol = '-';
