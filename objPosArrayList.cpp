@@ -6,6 +6,7 @@ using namespace std;
 // Check lecture contents on general purpose array list construction, 
 // and modify it to support objPos array list construction.
 
+// Minimum 4 Implementation
 objPosArrayList::objPosArrayList()
 {
     listSize = 0;
