@@ -9,40 +9,45 @@
 
 using namespace std;
 
+
 class GameMechs
 {
+    // Construct the remaining declaration from the project manual.
+
+    // Only some sample members are included here
+
+    // You will include more data members and member functions to complete your design.
+
     private:
         char input;
         bool exitFlag;
+        
         bool loseFlag;
         int score;
 
         int boardSizeX;
         int boardSizeY;
 
-        objPos food;
-
+        objPos foodPos;
+        
+        
     public:
         GameMechs();
         GameMechs(int boardX, int boardY);
-        ~GameMechs(); // is this one needed at all? Why or why not?
         
-        bool getExitFlagStatus() const; 
+        bool getExitFlagStatus();
         void setExitTrue();
-        bool getLoseFlagStatus() const;
-        void setLoseFlag();
 
-        char getInput() const;
+        char getInput();
         void setInput(char this_input);
         void clearInput();
 
-        int getBoardSizeX() const;
-        int getBoardSizeY() const;
+        int getBoardSizeX();
+        int getBoardSizeY();
+
         
-        int getScore() const;
-        void incrementScore();
-        
-        // More methods should be added here
+      
+
 };
 
 #endif
