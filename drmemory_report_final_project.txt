@@ -1,0 +1,251 @@
+Dr. Memory version 2.6.0 build 0 built on Sep 21 2023 17:48:48
+Windows version: WinVer=105;Rel=2009;Build=19045;Edition=Core
+Dr. Memory results for pid 11340: "Project.exe"
+Application cmdline: "./Project.exe"
+Recorded 124 suppression(s) from default C:\DrMemory-Windows-2.6.0\DrMemory-Windows-2.6.0\bin\suppress-default.txt
+
+Error #1: UNINITIALIZED READ: reading register eax
+# 0 KERNELBASE.dll!FindNextFileW      +0x20e    (0x7718f0fe <KERNELBASE.dll+0x10f0fe>)
+# 1 KERNELBASE.dll!FindNextFileA      +0x33     (0x7718d584 <KERNELBASE.dll+0x10d584>)
+# 2 .text                              [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 3 __mingw_glob                       [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 4 _setargv                           [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 5 .text      
+# 6 mainCRTStartup
+# 7 ntdll.dll!__RtlUserThreadStart
+Note: @0:00:00.209 in thread 19556
+Note: instruction: cmp    %eax $0x0000001a
+
+Error #2: UNINITIALIZED READ: reading register eax
+# 0 KERNELBASE.dll!FindNextFileW      +0x23b    (0x7718f12b <KERNELBASE.dll+0x10f12b>)
+# 1 KERNELBASE.dll!FindNextFileA      +0x33     (0x7718d584 <KERNELBASE.dll+0x10d584>)
+# 2 .text                              [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 3 __mingw_glob                       [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 4 _setargv                           [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 5 .text      
+# 6 mainCRTStartup
+# 7 ntdll.dll!__RtlUserThreadStart
+Note: @0:00:00.212 in thread 19556
+Note: instruction: data16 mov    %cx -> 0x00000234(%ebx,%eax,2)
+
+Error #3: UNINITIALIZED READ: reading register eax
+# 0 ntdll.dll!RtlUnicodeToMultiByteN
+# 1 ntdll.dll!RtlUnicodeStringToAnsiString
+# 2 KERNELBASE.dll!FindNextFileA              +0x87     (0x7718d5d8 <KERNELBASE.dll+0x10d5d8>)
+# 3 .text                                      [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 4 __mingw_glob                               [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 5 _setargv                                   [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 6 .text      
+# 7 mainCRTStartup
+# 8 ntdll.dll!__RtlUserThreadStart
+Note: @0:00:00.218 in thread 19556
+Note: instruction: mov    (%eax,%esi) -> %al
+
+Error #4: UNINITIALIZED READ: reading register eax
+# 0 KERNELBASE.dll!FindNextFileW      +0x167    (0x7718f057 <KERNELBASE.dll+0x10f057>)
+# 1 KERNELBASE.dll!FindNextFileA      +0x33     (0x7718d584 <KERNELBASE.dll+0x10d584>)
+# 2 .text                              [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 3 __mingw_glob                       [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 4 _setargv                           [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 5 .text      
+# 6 mainCRTStartup
+# 7 ntdll.dll!__RtlUserThreadStart
+Note: @0:00:00.220 in thread 19556
+Note: instruction: test   %eax %eax
+
+Error #5: UNINITIALIZED READ: reading register eax
+# 0 KERNELBASE.dll!FindNextFileW      +0x1ca    (0x7718f0ba <KERNELBASE.dll+0x10f0ba>)
+# 1 KERNELBASE.dll!FindNextFileA      +0x33     (0x7718d584 <KERNELBASE.dll+0x10d584>)
+# 2 .text                              [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 3 __mingw_glob                       [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 4 _setargv                           [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 5 .text      
+# 6 mainCRTStartup
+# 7 ntdll.dll!__RtlUserThreadStart
+Note: @0:00:00.221 in thread 19556
+Note: instruction: cmp    %eax $0x00000206
+
+Error #6: UNINITIALIZED READ: reading register eax
+# 0 KERNELBASE.dll!FindNextFileW      +0x1fd    (0x7718f0ed <KERNELBASE.dll+0x10f0ed>)
+# 1 KERNELBASE.dll!FindNextFileA      +0x33     (0x7718d584 <KERNELBASE.dll+0x10d584>)
+# 2 .text                              [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 3 __mingw_glob                       [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 4 _setargv                           [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 5 .text      
+# 6 mainCRTStartup
+# 7 ntdll.dll!__RtlUserThreadStart
+Note: @0:00:00.223 in thread 19556
+Note: instruction: data16 mov    %cx -> 0x2c(%ebx,%eax,2)
+
+Error #7: UNINITIALIZED READ: reading 0x012e1320-0x012e1324 4 byte(s)
+# 0 KERNELBASE.dll!FindNextFileW      +0x24e    (0x7718f13e <KERNELBASE.dll+0x10f13e>)
+# 1 KERNELBASE.dll!FindNextFileA      +0x33     (0x7718d584 <KERNELBASE.dll+0x10d584>)
+# 2 .text                              [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 3 __mingw_glob                       [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 4 _setargv                           [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 5 .text      
+# 6 mainCRTStartup
+# 7 ntdll.dll!__RtlUserThreadStart
+Note: @0:00:00.224 in thread 19556
+Note: instruction: test   0x38(%edi) $0x00000400
+
+Error #8: UNINITIALIZED READ: reading register eax
+# 0 .text                              [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 1 __mingw_readdir                    [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 2 .text                              [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 3 __mingw_glob                       [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 4 _setargv                           [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:47]
+# 5 .text      
+# 6 mainCRTStartup
+# 7 ntdll.dll!__RtlUserThreadStart
+Note: @0:00:00.225 in thread 19556
+Note: instruction: cmp    %eax $0x00000010
+
+Error #9: UNINITIALIZED READ: reading 0x0062fc3c-0x0062fc40 4 byte(s)
+# 0 msvcrt.dll!_kbhit_nolock
+# 1 msvcrt.dll!_kbhit    
+# 2 MacUILib_hasChar                      [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:28]
+# 3 GameMechs::getInput                   [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/GameMechs.cpp:38]
+# 4 Player::updatePlayerDir               [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Player.cpp:40]
+# 5 RunLogic                              [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:77]
+# 6 main                                  [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:35]
+Note: @0:00:02.071 in thread 19556
+Note: instruction: cmp    (%ebx) $0x00000000
+
+Error #10: UNINITIALIZED READ: reading 0x0062fd28-0x0062fd2a 2 byte(s)
+# 0 msvcrt.dll!_kbhit_nolock
+# 1 msvcrt.dll!_kbhit    
+# 2 MacUILib_hasChar                      [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:28]
+# 3 GameMechs::getInput                   [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/GameMechs.cpp:38]
+# 4 Player::updatePlayerDir               [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Player.cpp:40]
+# 5 RunLogic                              [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:77]
+# 6 main                                  [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:35]
+Note: @0:00:02.072 in thread 19556
+Note: instruction: data16 cmp    0xfffffffc(%ebx) %ax
+
+Error #11: UNINITIALIZED READ: reading 0x0062fe54-0x0062fe58 4 byte(s)
+# 0 msvcrt.dll!_getch_nolock
+# 1 msvcrt.dll!_getch    
+# 2 MacUILib_getChar                      [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/MacUILib.cpp:33]
+# 3 GameMechs::getInput                   [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/GameMechs.cpp:39]
+# 4 Player::updatePlayerDir               [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Player.cpp:40]
+# 5 RunLogic                              [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:77]
+# 6 main                                  [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:35]
+Note: @0:00:02.076 in thread 19556
+Note: instruction: cmp    0xffffffe0(%ebp) $0x00000000
+
+Error #12: UNADDRESSABLE ACCESS beyond heap bounds: reading 0x016faab4-0x016faab8 4 byte(s)
+# 0 _fu15___ZSt4cout               [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:206]
+# 1 main                           [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:40]
+Note: @0:00:06.668 in thread 19556
+Note: next higher malloc: 0x016faab8-0x016faad4
+Note: prev lower malloc:  0x016fa9a0-0x016fa9a8
+Note: 0x016faab4-0x016faab8 is 28 byte(s) beyond memory 0x016faa90-0x016faa98 that was freed here:
+Note: # 0 replace_operator_delete_nothrow               [D:\a\drmemory\drmemory\common\alloc_replace.c:2978]
+Note: # 1 objPos::~objPos                               [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/objPos.cpp:40]
+Note: # 2 DrawScreen                                    [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:139]
+Note: # 3 main                                          [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:36]
+Note: instruction: mov    (%eax) -> %eax
+
+Error #13: UNADDRESSABLE ACCESS beyond heap bounds: reading 0x016faab4-0x016faab8 4 byte(s)
+# 0 _fu15___ZSt4cout               [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:206]
+# 1 main                           [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:40]
+Note: @0:00:06.671 in thread 19556
+Note: next higher malloc: 0x016faab8-0x016faad4
+Note: prev lower malloc:  0x016fa9a0-0x016fa9a8
+Note: 0x016faab4-0x016faab8 is 28 byte(s) beyond memory 0x016faa90-0x016faa98 that was freed here:
+Note: # 0 replace_operator_delete_nothrow               [D:\a\drmemory\drmemory\common\alloc_replace.c:2978]
+Note: # 1 objPos::~objPos                               [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/objPos.cpp:40]
+Note: # 2 DrawScreen                                    [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:139]
+Note: # 3 main                                          [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:36]
+Note: instruction: mov    (%eax) -> %eax
+
+Error #14: INVALID HEAP ARGUMENT: allocated with operator new, freed with operator delete[]
+# 0 replace_operator_delete_array_nothrow               [D:\a\drmemory\drmemory\common\alloc_replace.c:3002]
+# 1 _fu15___ZSt4cout                                    [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:206]
+# 2 main                                                [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:40]
+Note: @0:00:06.673 in thread 19556
+Note: memory was allocated here:
+Note: # 0 replace_operator_new               [D:\a\drmemory\drmemory\common\alloc_replace.c:2903]
+Note: # 1 Initialize                         [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:57]
+Note: # 2 main                               [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:30]
+
+Error #15: INVALID HEAP ARGUMENT: allocated with operator new, freed with operator delete[]
+# 0 replace_operator_delete_array_nothrow               [D:\a\drmemory\drmemory\common\alloc_replace.c:3002]
+# 1 _fu15___ZSt4cout                                    [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:207]
+# 2 main                                                [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:40]
+Note: @0:00:06.674 in thread 19556
+Note: memory was allocated here:
+Note: # 0 replace_operator_new               [D:\a\drmemory\drmemory\common\alloc_replace.c:2903]
+Note: # 1 Initialize                         [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:51]
+Note: # 2 main                               [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:30]
+
+Error #16: UNADDRESSABLE ACCESS beyond heap bounds: reading 0x016f83c4-0x016f83c8 4 byte(s)
+# 0 _fu15___ZSt4cout               [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:208]
+# 1 main                           [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:40]
+Note: @0:00:06.675 in thread 19556
+Note: next higher malloc: 0x016f83c8-0x016f83d0
+Note: prev lower malloc:  0x016f8188-0x016f8260
+Note: 0x016f83c4-0x016f83c8 is 28 byte(s) beyond memory 0x016f83a0-0x016f83a8 that was freed here:
+Note: # 0 replace_operator_delete_nothrow               [D:\a\drmemory\drmemory\common\alloc_replace.c:2978]
+Note: # 1 objPos::~objPos                               [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/objPos.cpp:40]
+Note: # 2 DrawScreen                                    [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:126]
+Note: # 3 main                                          [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:36]
+Note: instruction: mov    (%edx) -> %edx
+
+Error #17: UNADDRESSABLE ACCESS beyond heap bounds: reading 0x016f83c4-0x016f83c8 4 byte(s)
+# 0 _fu15___ZSt4cout               [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:208]
+# 1 main                           [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:40]
+Note: @0:00:06.677 in thread 19556
+Note: next higher malloc: 0x016f83c8-0x016f83d0
+Note: prev lower malloc:  0x016f8188-0x016f8260
+Note: 0x016f83c4-0x016f83c8 is 28 byte(s) beyond memory 0x016f83a0-0x016f83a8 that was freed here:
+Note: # 0 replace_operator_delete_nothrow               [D:\a\drmemory\drmemory\common\alloc_replace.c:2978]
+Note: # 1 objPos::~objPos                               [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/objPos.cpp:40]
+Note: # 2 DrawScreen                                    [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:126]
+Note: # 3 main                                          [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:36]
+Note: instruction: mov    (%eax) -> %eax
+
+Error #18: INVALID HEAP ARGUMENT: allocated with operator new, freed with operator delete[]
+# 0 replace_operator_delete_array_nothrow               [D:\a\drmemory\drmemory\common\alloc_replace.c:3002]
+# 1 _fu15___ZSt4cout                                    [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:208]
+# 2 main                                                [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:40]
+Note: @0:00:06.679 in thread 19556
+Note: memory was allocated here:
+Note: # 0 replace_operator_new               [D:\a\drmemory\drmemory\common\alloc_replace.c:2903]
+Note: # 1 Initialize                         [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:54]
+Note: # 2 main                               [D:\COE2SH4\FinalProject\course-project-skibidi-gyatt-did-you-pray-today-rizz/Project.cpp:30]
+
+===========================================================================
+FINAL SUMMARY:
+
+DUPLICATE ERROR COUNTS:
+	Error #   1:     28
+	Error #   2:     28
+	Error #   3:    143
+	Error #   4:     10
+	Error #   5:     10
+	Error #   6:     10
+	Error #   7:     10
+	Error #   8:     10
+	Error #   9:      9
+	Error #  14:      2
+	Error #  18:      2
+
+SUPPRESSIONS USED:
+
+ERRORS FOUND:
+      4 unique,     4 total unaddressable access(es)
+     11 unique,   260 total uninitialized access(es)
+      3 unique,     5 total invalid heap argument(s)
+      0 unique,     0 total GDI usage error(s)
+      0 unique,     0 total handle leak(s)
+      0 unique,     0 total warning(s)
+      0 unique,     0 total,      0 byte(s) of leak(s)
+      0 unique,     0 total,      0 byte(s) of possible leak(s)
+ERRORS IGNORED:
+     21 potential error(s) (suspected false positives)
+         (details: C:\DrMemory-Windows-2.6.0\DrMemory-Windows-2.6.0\drmemory\logs\DrMemory-Project.exe.11340.000\potential_errors.txt)
+     44 unique,   447 total,  14746 byte(s) of still-reachable allocation(s)
+         (re-run with "-show_reachable" for details)
+Details: C:\DrMemory-Windows-2.6.0\DrMemory-Windows-2.6.0\drmemory\logs\DrMemory-Project.exe.11340.000\results.txt
